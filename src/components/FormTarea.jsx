@@ -113,7 +113,7 @@ export const FormTarea = () => {
 					name='tarea'
 					id='tarea'
 					placeholder='Escribe tu tarea'
-					maxLength='20'
+					maxLength='25'
 					onChange={handleChange}
 					value={input}
 				/>
