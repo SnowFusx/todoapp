@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#App {
+	display: flex;
+	font-family: 'Courier New', Courier, monospace;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-width: 100%;
+	min-height: 100vh;
+	background: rgb(17, 0, 50);
+	background: linear-gradient(
+		157deg,
+		rgba(17, 0, 50, 1) 8%,
+		rgba(68, 0, 255, 1) 100%
+	);
+}
+
+.tareaIndividual {
+	background-color: #eaeaea;
+	text-transform: capitalize;
+	font-family: 'Courier New', Courier, monospace;
+	color: #3b3b3b;
+	padding: 10px;
+	margin: 12px 0px 0px 0px;
+	max-width: 400px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	justify-items: center;
+	align-items: center;
+	box-shadow: 1px 1px 5px 0px #131313a1;
+	transition: all 300ms;
+	border-radius: 3px;
+	gap: 5px;
+
+	&:hover {
+		transform: scale(1.04);
+	}
+}
+
+.tareaTexto {
+	overflow: hidden;
+	overflow-wrap: break-word;
+}
+
+.tareaBtnContainer {
+	display: flex;
+}
+
+.tareaCompletadaBox {
+	box-shadow: 1px 1px 5px 0px #8000ffc5;
+	background-color: #1e1431;
+}
+.tareaCompletadaText {
+	text-decoration: line-through;
+	color: #868686;
+}
+
+.btnFilter {
+	background-color: rgb(106, 0, 255);
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	border: none;
+	margin-right: 5px;
+	cursor: pointer;
+	width: 100%;
+	border-radius: 5px;
+	transition: all 300ms;
+	box-shadow: 1px 1px 5px 0px #131313a1;
+
+	&:hover {
+		background-color: indigo;
+	}
+}
+
+input[type='submit' i] {
+	background-color: rgb(106, 0, 255);
+	color: rgb(255, 255, 255);
+	padding: 10px;
+	border: none;
+	margin-right: 5px;
+	margin-top: 10px;
+	cursor: pointer;
+	transition: all 300ms;
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px 0px #131313a1;
+
+	&:hover {
+		background-color: indigo;
+	}
+}
+
+input {
+	padding: 8px;
+	width: 100%;
+	border: none;
+	background-color: #ffffff00;
+	border-bottom: 2px solid #9d00ff;
+	border-radius: 3px;
+	outline: none;
+	color: rgb(255, 255, 255);
+
+	&:focus {
+		border: none;
+		border-bottom: 2px solid;
+	}
+}
+
+::placeholder {
+	color: red;
+}
+
+::-ms-input-placeholder {
+	/* Edge 12-18 */
+	color: red;
+}
+
+.filtersContainer {
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.tareasContainer {
+	width: 400px;
+}
+
+.btnIncompletas {
+	background-color: brown;
+	transition: all 300ms;
+
+	&:hover {
+		background-color: rgb(202, 2, 2);
+		transition: all 300ms;
+	}
+}
+
+.btnCompletadas {
+	background-color: rgb(28, 177, 117);
+	transition: all 300ms;
+
+	&:hover {
+		background-color: rgb(2, 202, 85);
+		transition: all 300ms;
+	}
+}
+
+.btnFilterSelected {
+	border: 1px solid #3b3b3b;
+}
