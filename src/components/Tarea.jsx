@@ -1,4 +1,4 @@
-import { DeleteIcon } from './Icons';
+import { DeleteIcon } from './icons';
 import { Button } from './Button';
 
 export const Tarea = ({ tarea, handleEliminar, handleCompletar }) => {
