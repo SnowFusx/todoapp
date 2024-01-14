@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Tarea } from './Tarea';
 import { v4 as uuidv4 } from 'uuid';
-import { DeleteIcon, CheckIcon } from './Icons';
+import { DeleteIcon, CheckIcon } from './icons';
 
 const items = JSON.parse(localStorage.getItem('tareas')) ?? [];
 
