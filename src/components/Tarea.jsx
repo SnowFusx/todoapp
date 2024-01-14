@@ -10,6 +10,10 @@ export const Tarea = ({ tarea, handleEliminar, handleCompletar }) => {
 		<>
 			<button
 				className='w-full'
+				ondblclick={e => {
+					e.preventDefault;
+					handleEliminar(tarea.id);
+				}}
 				onClick={e => {
 					e.preventDefault;
 					handleCompletar(tarea.id);

@@ -129,22 +129,32 @@ input {
 	width: 400px;
 }
 
-.btnIncompletas {
-	background-color: brown;
+.btnAll {
+	background-color: #df0062;
 	transition: all 300ms;
 
 	&:hover {
-		background-color: rgb(202, 2, 2);
+		background-color: #ab004b;
+		transition: all 300ms;
+	}
+}
+
+.btnIncompletas {
+	background-color: #ba0101;
+	transition: all 300ms;
+
+	&:hover {
+		background-color: #9b0101;
 		transition: all 300ms;
 	}
 }
 
 .btnCompletadas {
-	background-color: rgb(28, 177, 117);
+	background-color: #6cb600;
 	transition: all 300ms;
 
 	&:hover {
-		background-color: rgb(2, 202, 85);
+		background-color: #579202;
 		transition: all 300ms;
 	}
 }
