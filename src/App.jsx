@@ -1,4 +1,4 @@
-import { FormTarea } from './components/formTarea';
+import { FormTarea } from './components/FormTarea';
 
 function App() {
 	return (
